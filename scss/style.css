@@ -1,0 +1,156 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  height: 100%;
+  font-weight: 500;
+  overflow-y: inherit;
+}
+
+body {
+  min-width: 375px;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+  position: relative;
+}
+@media (min-width: 641px) {
+  body {
+    overflow-x: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li, dl, dd {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+time {
+  font-family: "Oswald";
+}
+
+.u-disp--sp {
+  display: block;
+}
+@media (min-width: 641px) {
+  .u-disp--sp {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .u-disp--sp {
+    display: none;
+  }
+}
+@media (min-width: 961px) {
+  .u-disp--sp {
+    display: none;
+  }
+}
+.u-disp--tablet {
+  display: none;
+}
+@media (min-width: 641px) {
+  .u-disp--tablet {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .u-disp--tablet {
+    display: none;
+  }
+}
+@media (min-width: 961px) {
+  .u-disp--tablet {
+    display: none;
+  }
+}
+.u-disp--pc {
+  display: none;
+}
+@media (min-width: 641px) {
+  .u-disp--pc {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .u-disp--pc {
+    display: block;
+  }
+}
+@media (min-width: 961px) {
+  .u-disp--pc {
+    display: block;
+  }
+}
+.u-disp--wide {
+  display: none;
+}
+@media (min-width: 641px) {
+  .u-disp--wide {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .u-disp--wide {
+    display: none;
+  }
+}
+@media (min-width: 961px) {
+  .u-disp--wide {
+    display: block;
+  }
+}
+.u-disp--full {
+  display: none;
+}
+@media (min-width: 641px) {
+  .u-disp--full {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .u-disp--full {
+    display: none;
+  }
+}
+@media (min-width: 961px) {
+  .u-disp--full {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/ress.css">
-    <!-- <link rel="stylesheet" href="./scss/style.css"> -->
-    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Cresta Design</title>
 </head>
 <body>
-    <header>
+    <header class="l-header">
+        <div class="l-header__headerlogo">
+            <p class="l-header__headerlogo__title">クリ★スタ</p>
+        </div>
+        <ul class="l-header__menu">
+            <li class="l-header__menu__logo">ロゴ</li>
+        </ul>
+        <li class="p-menu">
+            <button class="p-hamburger p-menu--bt is-hamburger">
+                <span>menuボタン</span>
+            </button>
+            <ul class="list">
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </li>
+    </header>
 
-        <div class="about">
+    <main class="l-main">
+        <div class="l-main__top">
+            <p>Cresta Design.</p>
+        </div>
+        <div class="l-main__about">
             <h1>About</h1>
             <h2>ミニマルで<br>洗練されたデザインを。</h2>
             <p>近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
         </div>
 
-        <div class="service">
+        <div class="l-main__service">
             <h1>Service</h1>
-            <div class="descript1">
+            <img src="./img/fv-bgi@2x.jpg" alt="image" class="l-main__service__img">
+            <div class="l-main__service__dcp">
                 <h2>リリース時のサポートで<br>
                     サービスのブランディングを</h2>
                 <p>弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
             </div>
-            <div class="descript2">
+            <img src="./img/fv-bgi_sp@2x.jpg" alt="image" class="l-main__service__img">
+            <div class="l-main__service__dcp">
                 <h2>リリース後のサポートで<br>
                     効果を最大化させる</h2>
                 <p>弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
@@ -31,35 +54,44 @@
             
         </div>
 
-        <div class="news">
+        <div class="l-main__news">
             <h1>News</h1>
-            <div class="news1">
-
+            <div class="l-main__news__content">
+                <img src="./img/card-image1@2x.jpg" alt="image" class="l-main__news__content__img">
                 <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
             </div>
-            <div class="news2">
-
+            <div class="l-main__news__content">
+                <img src="./img/card-image2@2x.jpg" alt="image" class="l-main__news__content__img">
                 <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
             </div>
-            <div class="new3">
-
+            <div class="l-main__news__content">
+                <img src="./img/card-image3@2x.jpg" alt="image" class="l-main__news__content__img">
                 <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
             </div>
         </div>
 
         <div class="contact">
             <h1>お問い合わせ</h1>
+            <form action="" method="get">
+                <p>担当者名</p>
+                <input type="text">
+                <p>電話番号</p>
+                <input type="text">
+                <p>メールアドレス</p>
+                <input type="text">
+                <p>お問い合わせ内容</p>
+                <textarea name="conatct"  cols="30" rows="5"></textarea>
+            </form>
         </div>
 
-    </header>
-
-    <body>
-        
-    </body>
+    
+    </main>
 
     <footer>
-
+        <p class="copyright">©︎crest.design all rights reserved</p>
     </footer>
-    
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>
