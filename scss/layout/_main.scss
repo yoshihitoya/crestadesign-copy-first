@@ -6,8 +6,8 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	&__top {
 		width: 100%;
 		height: 500px;
@@ -24,12 +24,13 @@
 			z-index: 2;
 			width:60%;
 			height:100px;
-			top:10%;
+			top:5%;
 			left:20%;
 			padding-top: 30px;
 			font-size: 20px;
 			text-align: center;
 			background-color: black;
+			color:white;
 			border: 1px solid;
 			border-color: white;
 
@@ -37,19 +38,101 @@
 
 	}
 	&__about {
-		
 		text-align: center;
-
+		>h1 {
+			padding:75px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		>h2 {
+			padding: 30px 10px;
+			text-align: left;
+			line-height: 200%;
+			font-size: 20px;
+			font-weight: 200;
+		}
+		>p {
+			padding:10px;
+			text-align: left;
+			line-height: 200%;
+			font-size: 15px;
+		}
 	}
 	&__service {
-		
 		text-align: center;
+		>h1 {
+			padding:75px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		&__dcp {
+			>h2 {
+				padding: 30px 10px;
+				text-align: left;
+				line-height: 200%;
+				font-size: 20px;
+				font-weight: 200;
+			}
+			>p {
+				padding:10px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				text-align: left;
+				line-height: 200%;
+				font-size: 15px;
+			}
+		}
+		
 	}
 	&__news {
 		text-align: center;
+		>h1 {
+			padding:75px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		&__content {
+			>h2 {
+				padding: 30px 10px;
+				text-align: left;
+				line-height: 200%;
+				font-size: 20px;
+				font-weight: 200;
+			}
+			>p {
+				padding:20px;
+				margin: 25px;
+				
+				text-align: left;
+				line-height: 200%;
+				font-size: 15px;
+			}
+		}
 	}
-	&__contant {
-		text-align: center;
+	&__contact {
+		
+		>h1 {
+			margin: 50px;
+			text-align: center;
+			font-size: 25px;
+			font-weight:bold;
+		}
+		>p {
+			left:0;
+		}
+		&__input {
+			border: 1px solid black;
+		}
+		&__button {
+			
+			width: 250px;
+			height: 100px;
+			background-color: black;
+			color: white;
+			font-size: 30px;
+			border-radius: 40%;
+		}
+		
 	}
 	@include breakpoint( tablet ) {
 		&__top {
@@ -68,7 +151,7 @@
 				z-index: 2;
 				width:50%;
 				height:100px;
-				top:10%;
+				top:5%;
 				left:35%;
 				padding-top: 25px;
 				font-size: 25px;
@@ -112,7 +195,7 @@
 				z-index: 2;
 				width:50%;
 				height:100px;
-				top:10%;
+				top:5%;
 				left:35%;
 				padding-top: 25px;
 				font-size: 30px;
@@ -157,7 +240,7 @@
 				z-index: 2;
 				width:25%;
 				height:100px;
-				top:10%;
+				top:5%;
 				left:35%;
 				padding-top: 25px;
 				font-size: 30px;
