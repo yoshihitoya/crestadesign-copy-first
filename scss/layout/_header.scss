@@ -6,6 +6,7 @@
 	align-items		: center;
 	background-color: black;
 	color			:white;
+	font-size: 30px;
 	@include breakpoint( tablet ) {
 	}
 	@include breakpoint( pc ) {
@@ -22,6 +23,7 @@
 		li {
 			display		: flex;
 			align-items	: center;
+			
 			&.l-header__menu__logo {
 				width		: 100px;
 				padding		: 0 20px 0 10px;
@@ -30,6 +32,7 @@
 				@include breakpoint( pc ) {
 					margin-right: auto;
 					border-right: 0;
+					font-size: 30px;
 				}
 			}
 		}
