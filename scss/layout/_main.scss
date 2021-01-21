@@ -10,12 +10,12 @@
 	color: black;
 	&__top {
 		width: 100%;
-		height: 500px;
+		height: 590px;
 		
 
 		&__img {
 			width:100%;
-			height:100%;
+			height:590px;
 			position:absolute;
 			z-index: 1;
 		}
@@ -65,23 +65,30 @@
 			font-size: 30px;
 			font-weight: bold;
 		}
-		&__dcp {
-			>h2 {
-				padding: 30px 10px;
-				text-align: left;
-				line-height: 200%;
-				font-size: 20px;
-				font-weight: 200;
-			}
-			>p {
-				padding:10px;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				text-align: left;
-				line-height: 200%;
-				font-size: 15px;
+		&__wrapper {
+			&__content {
+				&__txt {
+					>h2 {
+						padding: 30px 10px;
+						text-align: left;
+						line-height: 200%;
+						font-size: 20px;
+						font-weight: 200;
+					}
+					>p {
+						padding:10px;
+						margin-top: 20px;
+						margin-bottom: 20px;
+						text-align: left;
+						line-height: 200%;
+						font-size: 15px;
+					}
+				}
+	
+				
 			}
 		}
+		
 		
 	}
 	&__news {
@@ -91,22 +98,22 @@
 			font-size: 30px;
 			font-weight: bold;
 		}
-		&__content {
-			>h2 {
-				padding: 30px 10px;
-				text-align: left;
-				line-height: 200%;
-				font-size: 30px;
-				font-weight: 200;
+		&__wrapper {
+
+			&__content {
+				width: 300px;
+				height:400px;
+				margin: 10px;
+				>p {
+					padding:20px;
+					margin: 25px;
+					
+					text-align: left;
+					line-height: 200%;
+					font-size: 15px;
+				}
 			}
-			>p {
-				padding:20px;
-				margin: 25px;
-				
-				text-align: left;
-				line-height: 200%;
-				font-size: 15px;
-			}
+			
 		}
 	}
 	&__contact {
@@ -219,11 +226,26 @@
 	
 		}
 		&__service {
-			
-			text-align: center;
+			&__wrapper {
+				&__content {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: center;
+				}
+			}	
+		}
+		.reverse {
+			margin-top: 50px;
+			flex-direction: row-reverse;
 		}
 		&__news {
-			text-align: center;
+			&__wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+			}
 		}
 		&__contant {
 			text-align: center;
